@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WeaponDetailActivity"></activity>
+        <activity android:name=".WeaponDetailActivity" />
+        <activity
+            android:name=".WeaponListActivity"
+            android:label="@string/title_activity_weapon_list"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

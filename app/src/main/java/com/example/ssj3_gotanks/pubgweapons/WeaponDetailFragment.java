@@ -57,7 +57,8 @@ public class WeaponDetailFragment extends Fragment {
         }
     }
 
-    public void setWorkout(long id) {
+    public void setWeapon(long id) {
         this.weaponid = id;
     }
+
 }

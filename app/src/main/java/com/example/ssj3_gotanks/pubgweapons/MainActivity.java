@@ -5,30 +5,22 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements  WeaponListFragment.Listener{
-
+public class MainActivity extends AppCompatActivity{
+    public static final String EXTRA_CLASS = "com.example.ssj3_gotanks.pubgweapons";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    @Override
-    public void itemClicked(long id) {
-        View fragmentContainer = findViewById(R.id.fragment_container);
-        if (fragmentContainer != null) {
-            WeaponDetailFragment details = new WeaponDetailFragment();
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            details.setWorkout(id);
-            ft.replace(R.id.fragment_container, details);
-            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            ft.addToBackStack(null);
-            ft.commit();
-        }else {
-            Intent intent = new Intent(this, WeaponDetailActivity.class);
-            intent.putExtra(WeaponDetailActivity.EXTRA_WEAPON_ID, (int) id);
-            startActivity(intent);
-        }
+    
+    public void arClick(View view){
+        Intent intent = new Intent(this, WeaponListActivity.class);
+        Button button = (Button) findViewById(R.id.button);
+        String weaponsClass = button.getText().toString();
+        intent.putExtra(EXTRA_CLASS, weaponsClass);
+        startActivity(intent);
     }
+    
 }

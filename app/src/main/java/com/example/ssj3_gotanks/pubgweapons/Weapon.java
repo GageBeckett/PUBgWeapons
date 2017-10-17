@@ -19,8 +19,7 @@ public class Weapon {
             new Weapon("Groza", "Crate drop", "48", "715", "10000", "30", "0.080s", "Single, Full", "7.62"),
             new Weapon("M16A4", "Standard map drop", "41", "900", "8000", "30", "0.075s", "Single, Burst", "5.56"),
             new Weapon("M416", "Standard map drop", "41", "880", "8500", "30", "0.086s", "Single, Full", "5.56"),
-            new Weapon("SCAR-L", "Standard map drop", "41", "870", "9000", "30", "0.096s", "Single, Full", "5.56"),
-
+            new Weapon("SCAR-L", "Standard map drop", "41", "870", "9000", "30", "0.096s", "Single, Full", "5.56")
     };
 
     //Each Weapon has a name and description
@@ -34,9 +33,6 @@ public class Weapon {
         this.TBS = TBS;
         this.mode = mode;
         this.ammo = ammo;
-    }
-    public String getDescription() {
-        return description;
     }
 
     public String getName() {

@@ -3,4 +3,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_weapon_list">WeaponListActivity</string>
+    <string name="main_title">Players Unknown Battleground Weapons Info</string>
+    <string name="AR">Weapons</string>
+    <string name="ammo">Ammo Types</string>
+    <string name="Meds">Medical Supplies</string>
+    <string name="vics">Vehicles</string>
 </resources>

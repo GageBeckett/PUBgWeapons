@@ -13,6 +13,6 @@ public class WeaponDetailActivity extends AppCompatActivity {
         WeaponDetailFragment frag = (WeaponDetailFragment)
                 getSupportFragmentManager().findFragmentById(R.id.detail_frag);
         int weaponid = (int) getIntent().getExtras().get(EXTRA_WEAPON_ID);
-        frag.setWorkout(weaponid);
+        frag.setWeapon(weaponid);
     }
 }
